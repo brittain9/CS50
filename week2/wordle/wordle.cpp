@@ -135,14 +135,14 @@ void toUpper(std::string& makeUpper)
 
 std::string setWord()
 {
-	printf("Please enter the 5 letter word: ");
 	std::string word;
 	do
 	{
+		printf("\nPlease enter the 5 letter word: ");
 		std::cin >> word;
 		if(word.length() != 5)
 		{
-			printf("You entered a %i character word! Only 5 letters are allowed.");
+			printf("\nYou entered a %i character word! The word must have 5 letters.", word.length());
 		}
 	} while (word.length() != 5);
 
