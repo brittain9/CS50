@@ -86,7 +86,7 @@ int main(void)
 				auto index{ std::distance(wordle.begin(), it) };
 				if (it == wordle.end()) //if char not found continue
 				{
-					col(LGREY);
+					col(RED);
 					printf("%c", ch1);
 					break;
 				}
@@ -113,7 +113,7 @@ int main(void)
 
 	if (attempts >= 6)
 	{
-		printf("The word is %s; Thanks for playing.", wordle.c_str());
+		printf("\nThe word is %s; Thanks for playing.", wordle.c_str());
 	}
 }
 
